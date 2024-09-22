@@ -1,0 +1,3 @@
+Training run with the data of S2, S5 and S8.
+For each subject we use 86 trials.
+4 rounds of 10 epochs.
