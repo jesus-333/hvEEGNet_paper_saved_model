@@ -1,0 +1,3 @@
+Training run with the data of all subjects.
+For each subject we use 28 trials.
+10 rounds of 10 epochs.
