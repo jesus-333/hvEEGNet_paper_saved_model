@@ -1,0 +1,176 @@
+{
+  "model": {
+    "value": {
+      "input_size": [
+        1,
+        1,
+        61,
+        1536
+      ],
+      "type_vae": 0,
+      "parameters_map_type": 0,
+      "encoder_config": {
+        "p_kernel_2": [
+          1,
+          8
+        ],
+        "activation": "elu",
+        "print_var": false,
+        "c_kernel_3": [
+          1,
+          64
+        ],
+        "use_bias": false,
+        "p_kernel_1": [
+          1,
+          4
+        ],
+        "filter_1": 8,
+        "D": 2,
+        "c_kernel_1": [
+          1,
+          512
+        ],
+        "filter_2": 16,
+        "T": 1536,
+        "flatten_output": false,
+        "C": 61,
+        "prob_dropout": 0.5,
+        "use_dropout_2d": true,
+        "hidden_space": 768,
+        "parameters_map_type": 0,
+        "c_kernel_2": [
+          61,
+          1
+        ],
+        "dimension_reshape": [
+          -1,
+          16,
+          1,
+          48
+        ]
+      },
+      "use_classifier": false,
+      "convert_logvar_to_var": false,
+      "hidden_space_dimension_list": [
+        32,
+        128,
+        512
+      ],
+      "sampling_activation": "elu",
+      "hidden_space": 1,
+      "n_classes": 4,
+      "use_activation_in_sampling": true,
+      "type_encoder": 0,
+      "use_h_in_decoder": false,
+      "type_decoder": 0,
+      "encoder_outputs_shape": [
+        [
+          1,
+          8,
+          61,
+          1536
+        ],
+        [
+          1,
+          16,
+          1,
+          384
+        ],
+        [
+          1,
+          16,
+          1,
+          48
+        ]
+      ]
+    }
+  },
+  "train": {
+    "value": {
+      "optimizer_weight_decay": 0.01,
+      "block_size": 128,
+      "device": "cuda",
+      "edge_samples_ignored": 0,
+      "lr_decay_rate": 0.999,
+      "use_scheduler": true,
+      "recon_loss_type": 3,
+      "alpha": 1,
+      "use_classifier": false,
+      "notes": "",
+      "average_channels": false,
+      "debug": false,
+      "project_name": "hvEEGNet_Ofner2017",
+      "epochs": 20,
+      "log_freq": 1,
+      "soft_DTW_type": 3,
+      "measure_metrics_during_training": false,
+      "path_to_save_model": "model_weights",
+      "batch_size": 10,
+      "beta": 1,
+      "print_var": true,
+      "gamma": 1,
+      "gamma_dtw": 1,
+      "model_artifact_name": "hvEEGNet_Ofner2017",
+      "name_training_run": "S5_WSL_Jesus_Dell_run_train_1",
+      "epoch_to_save_model": 1,
+      "train_iteration_per_subject": {
+        "1": 2,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 1,
+        "6": 1,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 2,
+        "14": 0,
+        "15": 1
+      },
+      "wandb_training": true,
+      "lr": 0.01
+    }
+  },
+  "_wandb": {
+    "value": {
+      "cli_version": "0.15.10",
+      "is_jupyter_run": false,
+      "python_version": "3.11.4",
+      "is_kaggle_kernel": false,
+      "t": {
+        "1": [
+          1,
+          5,
+          53,
+          55
+        ],
+        "2": [
+          1,
+          5,
+          53,
+          55
+        ],
+        "3": [
+          2,
+          3,
+          13,
+          16,
+          23
+        ],
+        "4": "3.11.4",
+        "5": "0.15.10",
+        "8": [
+          3,
+          5,
+          13
+        ]
+      },
+      "framework": "torch",
+      "start_time": 1728388221.141796
+    }
+  }
+}

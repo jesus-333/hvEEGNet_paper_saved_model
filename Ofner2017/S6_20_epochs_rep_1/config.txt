@@ -1,0 +1,176 @@
+{
+  "model": {
+    "value": {
+      "encoder_config": {
+        "flatten_output": false,
+        "hidden_space": 768,
+        "use_dropout_2d": true,
+        "C": 61,
+        "print_var": false,
+        "c_kernel_3": [
+          1,
+          64
+        ],
+        "p_kernel_1": [
+          1,
+          4
+        ],
+        "filter_2": 16,
+        "filter_1": 8,
+        "dimension_reshape": [
+          -1,
+          16,
+          1,
+          48
+        ],
+        "activation": "elu",
+        "use_bias": false,
+        "c_kernel_2": [
+          61,
+          1
+        ],
+        "D": 2,
+        "T": 1536,
+        "c_kernel_1": [
+          1,
+          512
+        ],
+        "prob_dropout": 0.5,
+        "parameters_map_type": 0,
+        "p_kernel_2": [
+          1,
+          8
+        ]
+      },
+      "encoder_outputs_shape": [
+        [
+          1,
+          8,
+          61,
+          1536
+        ],
+        [
+          1,
+          16,
+          1,
+          384
+        ],
+        [
+          1,
+          16,
+          1,
+          48
+        ]
+      ],
+      "use_classifier": false,
+      "type_decoder": 0,
+      "parameters_map_type": 0,
+      "convert_logvar_to_var": false,
+      "type_encoder": 0,
+      "use_activation_in_sampling": true,
+      "hidden_space_dimension_list": [
+        32,
+        128,
+        512
+      ],
+      "sampling_activation": "elu",
+      "type_vae": 0,
+      "input_size": [
+        1,
+        1,
+        61,
+        1536
+      ],
+      "n_classes": 4,
+      "use_h_in_decoder": false,
+      "hidden_space": 1
+    }
+  },
+  "train": {
+    "value": {
+      "use_scheduler": true,
+      "measure_metrics_during_training": false,
+      "soft_DTW_type": 3,
+      "train_iteration_per_subject": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0,
+        "6": 1,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 1,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0
+      },
+      "model_artifact_name": "hvEEGNet_Ofner2017",
+      "epochs": 20,
+      "beta": 1,
+      "epoch_to_save_model": 1,
+      "use_classifier": false,
+      "batch_size": 10,
+      "lr_decay_rate": 0.999,
+      "path_to_save_model": "model_weights",
+      "edge_samples_ignored": 0,
+      "device": "cuda",
+      "debug": false,
+      "name_training_run": "S6_Colab_run_train_1",
+      "log_freq": 1,
+      "notes": "",
+      "block_size": 256,
+      "gamma": 1,
+      "print_var": true,
+      "optimizer_weight_decay": 0.01,
+      "recon_loss_type": 3,
+      "wandb_training": true,
+      "gamma_dtw": 1,
+      "lr": 0.01,
+      "project_name": "hvEEGNet_Ofner2017",
+      "average_channels": false,
+      "alpha": 1
+    }
+  },
+  "_wandb": {
+    "value": {
+      "python_version": "3.10.12",
+      "m": [],
+      "t": {
+        "1": [
+          1,
+          5,
+          53,
+          55
+        ],
+        "2": [
+          1,
+          5,
+          53,
+          55
+        ],
+        "3": [
+          2,
+          3,
+          13,
+          16,
+          23,
+          55
+        ],
+        "4": "3.10.12",
+        "5": "0.18.3",
+        "8": [
+          1,
+          5,
+          12
+        ],
+        "12": "0.18.3",
+        "13": "linux-x86_64"
+      },
+      "cli_version": "0.18.3"
+    }
+  }
+}
